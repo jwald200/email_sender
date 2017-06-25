@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'figaro'
 gem 'slim-rails'
 gem 'email_validator', github: 'jwald200/email_validator'
 
