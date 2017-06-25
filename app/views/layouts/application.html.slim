@@ -8,8 +8,8 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   body
-    - if flash[:error]
-      div.error = flash[:error]
+    - if flash[:warning]
+      div.warning = flash[:warning]
     - if flash[:notice]
       div.notice = flash[:notice]
     = yield
