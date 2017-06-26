@@ -4,7 +4,7 @@ RSpec.feature 'email form' do
     fill_in 'email', with: '@go.com'
     click_on 'Send Me an Email'
 
-    expect(page).to have_css('.warning', text: '@go.com is not a valid email address')
+    expect(page).to have_css('.warning', text: SMTP_CLIENT_ERROR_MESSAGE)
   end
 
   scenario 'user enters valid email' do
