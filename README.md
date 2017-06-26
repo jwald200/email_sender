@@ -1,8 +1,8 @@
-##Description
+## Description
 
 This app accepts an email address, checks if it is a valid address and sends a message to that address. If there are errors, the user will see a flash message with the error.
 
-##Setup
+## Setup
 
 - `git clone https://github.com/jwald200/email_sender`
 - `bundle install`
