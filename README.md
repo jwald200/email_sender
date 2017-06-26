@@ -1,24 +1,17 @@
-# README
+##Description
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app accepts an email address, checks if it is a valid address and sends a message to that address. If there are errors, the user will see a flash message with the error.
 
-Things you may want to cover:
+##Setup
 
-* Ruby version
+- `git clone https://github.com/jwald200/email_sender`
+- `bundle install`
+- `bundle exec figaro install`
 
-* System dependencies
+- Write the following in config/application.yml
+```
+gmail_username: your username
+gmail_password: your password
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Go to [settings](https://myaccount.google.com/lesssecureapps) and allow less secure apps (you can turn it off after testing)
